@@ -95,5 +95,11 @@ class EstudianteController extends Controller
         $estudiante->save();
     }
 
+    public function seleccionarEstudiantes(Request $request)
+    {
+        if (!$request->ajax()) return redirect('/');
+        $estudiantes = Estudiante::where('condicion','=','1')->get();
+        return ['estudiantes' => $estudiantes];
+    }
     
 }

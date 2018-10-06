@@ -16,7 +16,7 @@ window.Vue = require('vue');
  */
 
 Vue.component('estudiante', require('./components/Estudiante.vue'));
-
+Vue.component('paciente', require('./components/Paciente.vue'));
 const app = new Vue({
     el: '#app',
     data :{

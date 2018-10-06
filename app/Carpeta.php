@@ -8,5 +8,5 @@ class Estudiante extends Model
 {
     //protected $table = 'estudiantes';
     //protected $primaryKey = 'id';
-    protected $fillable = ['codigoEstudiante','nombres','apellidos','email','condicion','nro','estado'];
+    protected $fillable = ['fecha','observaciones'];
 }
